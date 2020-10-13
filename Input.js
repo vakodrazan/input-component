@@ -1,8 +1,20 @@
 import React from 'react';
 
-function Input() {
+function Input(props) {
+    let inputClass = props.error ? `input input--error` : "input"
+    // if (props.helperText) {
+        
+    // }
     return (
-        <input type="text" placeholder="Placeholder" />
+        <label>
+            Label <br/>
+            <input 
+                className={inputClass} 
+                type="text" 
+                disabled={props.disabled}
+                placeholder="Placeholder"
+             />
+        </label>
     )
 }
 
