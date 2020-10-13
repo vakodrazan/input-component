@@ -1,0 +1,37 @@
+section {
+    padding-bottom: 15px;
+}
+
+.input {
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.input:hover {
+    border: 1px solid #f10505;
+}
+
+.input:focus-within {
+    border: 1px solid #2962FF;
+}
+
+.input--error {
+    border: 1px solid #D32F2F;
+}
+
+.input--error:hover {
+    border: 1px solid #333333;
+}
+
+.input--error:focus {
+    border: 1px solid #D32F2F;
+}
+
+.input:disabled {
+	background-color: #F2F2F2;
+	border: 1px solid #E0E0E0;
+}
