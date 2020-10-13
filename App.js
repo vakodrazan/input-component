@@ -31,6 +31,17 @@ function App() {
                 <br/>
                 <Input helperText="You can use as much words as you want" error />
             </section>
+
+            <section>
+                {`<Input startIcon="" />`} 
+                <br/>
+                <Input startIcon="" />
+            </section>
+            <section>
+                {`<Input endIcon="" />`} 
+                <br/>
+                <Input endIcon="" />
+            </section>
         </article>
     )
 }
