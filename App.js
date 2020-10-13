@@ -33,14 +33,14 @@ function App() {
             </section>
 
             <section>
-                {`<Input startIcon="" />`} 
+                {`<Input startIcon="call" />`} 
                 <br/>
-                <Input startIcon="" />
+                <Input startIcon="call" />
             </section>
             <section>
-                {`<Input endIcon="" />`} 
+                {`<Input endIcon="lock" />`} 
                 <br/>
-                <Input endIcon="" />
+                <Input endIcon="lock" />
             </section>
         </article>
     )
