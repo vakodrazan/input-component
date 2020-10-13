@@ -25,6 +25,12 @@ function App() {
                 <br/>
                 <Input helperText="You can use as much words as you want" />
             </section>
+
+            <section>
+                {`<Input helperText="You can use as much words as you want" error />`} 
+                <br/>
+                <Input helperText="You can use as much words as you want" error />
+            </section>
         </article>
     )
 }
