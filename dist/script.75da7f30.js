@@ -28298,15 +28298,18 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Input(props) {
-  var inputClass = props.error ? "input input--error" : "input"; // if (props.helperText) {
-  // }
+  var inputClass = props.error ? "input input--error" : "input";
+
+  if (props.helperText) {
+    inputClass = "".concat(inputClass, " input--helperText");
+  }
 
   return /*#__PURE__*/_react.default.createElement("label", null, "Label ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("input", {
     className: inputClass,
     type: "text",
     disabled: props.disabled,
     placeholder: "Placeholder"
-  }));
+  }), /*#__PURE__*/_react.default.createElement("br", null), props.helperText && /*#__PURE__*/_react.default.createElement("small", null, props.helperText));
 }
 
 var _default = Input;
@@ -28406,6 +28409,9 @@ function App() {
     disabled: true
   })), /*#__PURE__*/_react.default.createElement("section", null, "<Input helperText=\"You can use as much words as you want\" />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     helperText: "You can use as much words as you want"
+  })), /*#__PURE__*/_react.default.createElement("section", null, "<Input helperText=\"You can use as much words as you want\" error />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    helperText: "You can use as much words as you want",
+    error: true
   })));
 }
 

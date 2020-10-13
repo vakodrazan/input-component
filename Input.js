@@ -2,9 +2,9 @@ import React from 'react';
 
 function Input(props) {
     let inputClass = props.error ? `input input--error` : "input"
-    // if (props.helperText) {
-        
-    // }
+    if (props.helperText) {
+        inputClass = `${inputClass} input--helperText`
+    }
     return (
         <label>
             Label <br/>
@@ -13,7 +13,10 @@ function Input(props) {
                 type="text" 
                 disabled={props.disabled}
                 placeholder="Placeholder"
-             />
+            />
+            <br/>
+            {props.helperText && <small>{props.helperText}</small>}
+
         </label>
     )
 }

@@ -37,4 +37,9 @@ section {
 }
 
 
+.input--helperText ~ small {
+    color: #828282;
+    font-size: 10px;
+}
+
 /*# sourceMappingURL=/script.75da7f30.css.map */
