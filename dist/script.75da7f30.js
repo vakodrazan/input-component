@@ -6807,7 +6807,7 @@ if ("development" !== "production") {
       }
 
       var eventName = 'on' + eventNameSuffix;
-      var isSupported = eventName in document;
+      var isSupported = (eventName in document);
 
       if (!isSupported) {
         var element = document.createElement('div');
@@ -28285,17 +28285,60 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"script.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"Input.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Input() {
+  return /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    placeholder: "Placeholder"
+  });
+}
+
+var _default = Input;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Input = _interopRequireDefault(require("./Input"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function App() {
+  return /*#__PURE__*/_react.default.createElement(_Input.default, null);
+}
+
+var _default = App;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./Input":"Input.js"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
+var _App = _interopRequireDefault(require("./App"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render(_react.default.createElement("h1", null, "Hello Onja"), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById('root'));
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App":"App.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -28323,7 +28366,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65015" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50611" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -28499,5 +28542,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
+},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
 //# sourceMappingURL=/script.75da7f30.js.map
