@@ -28412,6 +28412,10 @@ function App() {
   })), /*#__PURE__*/_react.default.createElement("section", null, "<Input helperText=\"You can use as much words as you want\" error />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     helperText: "You can use as much words as you want",
     error: true
+  })), /*#__PURE__*/_react.default.createElement("section", null, "<Input startIcon=\"\" />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    startIcon: ""
+  })), /*#__PURE__*/_react.default.createElement("section", null, "<Input endIcon=\"\" />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    endIcon: ""
   })));
 }
 
