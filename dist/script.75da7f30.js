@@ -28320,6 +28320,10 @@ function Input(props) {
     inputClass = "".concat(inputClass, " input--").concat(props.size);
   }
 
+  if (props.fullWidth) {
+    inputClass = "".concat(inputClass, " input--fullWidth");
+  }
+
   return /*#__PURE__*/_react.default.createElement("label", null, "Label ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("input", {
     className: inputClass,
     type: "text",

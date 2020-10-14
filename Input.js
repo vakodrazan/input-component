@@ -17,6 +17,9 @@ function Input(props) {
     if (props.size) {
         inputClass = `${inputClass} input--${props.size}`
     }
+    if (props.fullWidth) {
+        inputClass = `${inputClass} input--fullWidth`
+    }
 
 
     return (
