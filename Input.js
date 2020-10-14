@@ -26,8 +26,10 @@ function Input(props) {
 
 
     return (
+        <form>
         <label>
             Label <br/>
+        </label>
             {props.multiline 
             ? <textarea className={inputClass} placeholder="Placeholder"></textarea> 
             : <input 
@@ -39,8 +41,8 @@ function Input(props) {
             }
             <br/>
             {props.helperText && <small>{props.helperText}</small>}
-
-        </label>
+    
+        </form>
     )
 }
 

@@ -23,6 +23,10 @@ section {
     border: 1px solid #D32F2F;
 }
 
+.input--error ~ small {
+    color: #D32F2F !important;
+}
+
 .input--error:hover {
     border: 1px solid #333333;
 }
@@ -72,7 +76,7 @@ section {
 .input--call {
     background-image: url("./svgs/call.svg");
 }
-.input--cloud_download {
+.input--cloud {
     background-image: url("./svgs/cloud_download.svg");
 }
 .input--keyboard_voice {

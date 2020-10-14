@@ -28328,7 +28328,7 @@ function Input(props) {
     inputClass = "".concat(inputClass, " input--").concat(props.row);
   }
 
-  return /*#__PURE__*/_react.default.createElement("label", null, "Label ", /*#__PURE__*/_react.default.createElement("br", null), props.multiline ? /*#__PURE__*/_react.default.createElement("textarea", {
+  return /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("label", null, "Label ", /*#__PURE__*/_react.default.createElement("br", null)), props.multiline ? /*#__PURE__*/_react.default.createElement("textarea", {
     className: inputClass,
     placeholder: "Placeholder"
   }) : /*#__PURE__*/_react.default.createElement("input", {
