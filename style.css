@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+
+.content {
+    padding-bottom: 2rem;
+}
+
+.container {
+    padding: 1rem;
+    margin: auto;
+    max-width: 1114px;
+}
+
+@media (min-width: 1114px) {
+    .container {
+        padding: 0;
+        margin: auto;
+        width: 1114px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
