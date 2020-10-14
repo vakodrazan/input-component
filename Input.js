@@ -1,7 +1,9 @@
 import React from 'react';
 
 function Input(props) {
-    let inputClass = props.error ? `input input--error` : "input"
+    let inputClass = props.error ? `input input--error` : "input";
+    let lableStyle = props.error ? "label--error" : "";
+
     if (props.helperText) {
         inputClass = `${inputClass} input--helperText`
     } 
@@ -26,10 +28,8 @@ function Input(props) {
 
 
     return (
-        <form>
-        <label>
+        <label className={lableStyle}>
             Label <br/>
-        </label>
             {props.multiline 
             ? <textarea className={inputClass} placeholder="Placeholder"></textarea> 
             : <input 
@@ -41,8 +41,8 @@ function Input(props) {
             }
             <br/>
             {props.helperText && <small>{props.helperText}</small>}
-    
-        </form>
+
+        </label>
     )
 }
 
