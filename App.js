@@ -48,6 +48,23 @@ function App() {
                 <br/>
                 <Input value="text" />
             </section>
+
+            {/* Size */}
+            <section>
+                {`<Input size="sm" />`} 
+                <br/>
+                <Input size="sm" />
+            </section>
+            <section>
+                {`<Input size="md" />`} 
+                <br/>
+                <Input size="md" />
+            </section>
+            <section>
+                {`<Input fullWidth />`} 
+                <br/>
+                <Input fullWidth />
+            </section>
         </article>
     )
 }

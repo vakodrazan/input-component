@@ -28316,6 +28316,10 @@ function Input(props) {
     inputClass = "".concat(inputClass, " input--").concat(props.value);
   }
 
+  if (props.size) {
+    inputClass = "".concat(inputClass, " input--").concat(props.size);
+  }
+
   return /*#__PURE__*/_react.default.createElement("label", null, "Label ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("input", {
     className: inputClass,
     type: "text",
@@ -28430,6 +28434,12 @@ function App() {
     endIcon: "lock"
   })), /*#__PURE__*/_react.default.createElement("section", null, "<Input value=\"text\" />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     value: "text"
+  })), /*#__PURE__*/_react.default.createElement("section", null, "<Input size=\"sm\" />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    size: "sm"
+  })), /*#__PURE__*/_react.default.createElement("section", null, "<Input size=\"md\" />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    size: "md"
+  })), /*#__PURE__*/_react.default.createElement("section", null, "<Input fullWidth />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    fullWidth: true
   })));
 }
 
@@ -28475,7 +28485,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53430" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65275" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

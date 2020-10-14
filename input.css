@@ -91,3 +91,16 @@ section {
 .input--text::placeholder {
     color: #333333
 }
+
+/* ******* Size ******** */
+
+.input--sm {
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.input--md {
+    padding-left: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}

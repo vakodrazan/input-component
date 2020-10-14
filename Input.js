@@ -14,6 +14,9 @@ function Input(props) {
     if (props.value) {
         inputClass = `${inputClass} input--${props.value}`
     }
+    if (props.size) {
+        inputClass = `${inputClass} input--${props.size}`
+    }
 
 
     return (
