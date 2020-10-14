@@ -6,70 +6,88 @@ function App() {
     return (
         <article>
             <section>
-                {`<Input />`} 
-                <br/>
-                <Input />
+                <div>
+                    {`<Input />`} 
+                    <br/>
+                    <Input />
+                </div>
             </section>
             <section>
-                {`<Input error />`} 
-                <br/>
-                <Input error />
+                <div>
+                    {`<Input error />`} 
+                    <br/>
+                    <Input error />
+                </div>
             </section>
             <section>
-                {`<Input disabled />`} 
-                <br/>
-                <Input disabled />
+                <div>
+                    {`<Input disabled />`} 
+                    <br/>
+                    <Input disabled />
+                </div>
             </section>
             <section>
-                {`<Input helperText="You can use as much words as you want" />`} 
-                <br/>
-                <Input helperText="You can use as much words as you want" />
-            </section>
-
-            <section>
-                {`<Input helperText="You can use as much words as you want" error />`} 
-                <br/>
-                <Input helperText="You can use as much words as you want" error />
-            </section>
-
-            <section>
-                {`<Input startIcon="call" />`} 
-                <br/>
-                <Input startIcon="call" />
-            </section>
-            <section>
-                {`<Input endIcon="lock" />`} 
-                <br/>
-                <Input endIcon="lock" />
+                <div> 
+                    {`<Input helperText="You can use as much words as you want" />`} 
+                    <br/>
+                    <Input helperText="You can use as much words as you want" /> 
+                </div>
+                <div> 
+                    {`<Input helperText="You can use as much words as you want" error />`} 
+                    <br/>
+                    <Input helperText="You can use as much words as you want" error />
+                </div>
             </section>
 
             <section>
-                {`<Input value="text" />`} 
-                <br/>
-                <Input value="text" />
+                <div> 
+                    {`<Input startIcon="call" />`} 
+                    <br/>
+                    <Input startIcon="call" />
+                </div>
+                <div> 
+                    {`<Input endIcon="lock" />`} 
+                    <br/>
+                    <Input endIcon="lock" />
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    {`<Input value="text" />`} 
+                    <br/>
+                    <Input value="text" />
+                </div>
             </section>
 
             {/* Size */}
             <section>
-                {`<Input size="sm" />`} 
-                <br/>
-                <Input size="sm" />
-            </section>
-            <section>
-                {`<Input size="md" />`} 
-                <br/>
-                <Input size="md" />
-            </section>
-            <section>
-                {`<Input fullWidth />`} 
-                <br/>
-                <Input fullWidth />
+                <div> 
+                    {`<Input size="sm" />`} 
+                    <br/>
+                    <Input size="sm" />
+                </div>
+                <div> 
+                    {`<Input size="md" />`} 
+                    <br/>
+                    <Input size="md" />
+                </div>
             </section>
 
             <section>
-                {`<Input multiline row="4" />`} 
-                <br/>
-                <Input multiline row="4" />
+                <div>
+                    {`<Input fullWidth />`} 
+                    <br/>
+                    <Input fullWidth />
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    {`<Input multiline row="4" />`} 
+                    <br/>
+                    <Input multiline row="4" />
+                </div>
             </section>  
         </article>
     )
