@@ -42,4 +42,46 @@ section {
     font-size: 10px;
 }
 
+/* **************** Icons *************** */
+
+/* Start Icon */
+
+.input--startIcon {
+    background-repeat: no-repeat;
+    background-size: 15% 100%;
+    text-align: justify;
+    padding-left: 25px;
+}
+
+.input--startIcon::placeholder {
+    padding-left: 10px;
+}
+
+/* End Icon */
+
+.input--endIcon {
+    background-repeat: no-repeat;
+    background-size: 15% 100%;
+    background-position: right;
+    padding-right: 25px;
+}
+
+
+.input--call {
+    background-image: url("/call.4a69f2c7.svg");
+}
+.input--cloud_download {
+    background-image: url("/cloud_download.0fdc437a.svg");
+}
+.input--keyboard_voice {
+    background-image: url("/keyboard_voice.bece73fe.svg");
+}
+.input--lock {
+    background-image: url("/lock.2d2d0741.svg");
+}
+.input--watch {
+    background-image: url("/watch.42c4014c.svg");
+}
+
+
 /*# sourceMappingURL=/script.75da7f30.css.map */

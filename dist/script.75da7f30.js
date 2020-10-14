@@ -28304,6 +28304,14 @@ function Input(props) {
     inputClass = "".concat(inputClass, " input--helperText");
   }
 
+  if (props.startIcon) {
+    inputClass = "".concat(inputClass, " input--startIcon input--").concat(props.startIcon);
+  }
+
+  if (props.endIcon) {
+    inputClass = "".concat(inputClass, " input--endIcon input--").concat(props.endIcon);
+  }
+
   return /*#__PURE__*/_react.default.createElement("label", null, "Label ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("input", {
     className: inputClass,
     type: "text",
@@ -28386,7 +28394,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
+},{"./svgs\\call.svg":[["call.4a69f2c7.svg","svgs/call.svg"],"svgs/call.svg"],"./svgs\\cloud_download.svg":[["cloud_download.0fdc437a.svg","svgs/cloud_download.svg"],"svgs/cloud_download.svg"],"./svgs\\keyboard_voice.svg":[["keyboard_voice.bece73fe.svg","svgs/keyboard_voice.svg"],"svgs/keyboard_voice.svg"],"./svgs\\lock.svg":[["lock.2d2d0741.svg","svgs/lock.svg"],"svgs/lock.svg"],"./svgs\\watch.svg":[["watch.42c4014c.svg","svgs/watch.svg"],"svgs/watch.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28461,7 +28469,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50611" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53430" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
