@@ -4,11 +4,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://github.com/vakodrazan/input-component">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://elegant-input-41fcff.netlify.app/">
       Solution
     </a>
   </h3>
@@ -29,13 +29,16 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./Screenshot-input-component.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 -   Where can I see your demo?
+You can see my demo in the given demo link at the top
 -   What was your experience?
+I was hard to create lots of input with only one component.
 -   What have you learned/improved?
+I learnt when we want to change the color of the border when focusing the input, we must take the outline out.
 -   Your wisdom? :)
 
 ### Built With
@@ -74,6 +77,6 @@ $ npm start
 
 ## Contact
 
--   Website [your-website.com](https://{your-web-site-link})
--   GitHub [@your-username](https://{github.com/your-usermame})
+-   Website [your-website.com](https://elegant-input-41fcff.netlify.app/)
+-   GitHub [@your-username](https://github.com/vakodrazan/input-component)
 -   Twitter [@your-twitter](https://{twitter.com/your-username})
