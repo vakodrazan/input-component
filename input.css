@@ -108,3 +108,23 @@ section {
 .input--fullWidth {
     width: 100%;
 }
+
+/* Text area */
+
+textarea {
+    resize: none;
+}
+
+.input--1 {
+    height: auto;
+}
+.input--2 {
+    height: 70px;
+}
+.input--3 {
+    height: 100px;
+}
+
+.input--4 {
+    height: 150px;
+}

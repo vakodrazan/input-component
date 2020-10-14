@@ -65,6 +65,12 @@ function App() {
                 <br/>
                 <Input fullWidth />
             </section>
+
+            <section>
+                {`<Input multiline row="4" />`} 
+                <br/>
+                <Input multiline row="4" />
+            </section>  
         </article>
     )
 }

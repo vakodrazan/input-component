@@ -28324,7 +28324,14 @@ function Input(props) {
     inputClass = "".concat(inputClass, " input--fullWidth");
   }
 
-  return /*#__PURE__*/_react.default.createElement("label", null, "Label ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("input", {
+  if (props.row) {
+    inputClass = "".concat(inputClass, " input--").concat(props.row);
+  }
+
+  return /*#__PURE__*/_react.default.createElement("label", null, "Label ", /*#__PURE__*/_react.default.createElement("br", null), props.multiline ? /*#__PURE__*/_react.default.createElement("textarea", {
+    className: inputClass,
+    placeholder: "Placeholder"
+  }) : /*#__PURE__*/_react.default.createElement("input", {
     className: inputClass,
     type: "text",
     disabled: props.disabled,
@@ -28444,6 +28451,9 @@ function App() {
     size: "md"
   })), /*#__PURE__*/_react.default.createElement("section", null, "<Input fullWidth />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     fullWidth: true
+  })), /*#__PURE__*/_react.default.createElement("section", null, "<Input multiline row=\"4\" />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    multiline: true,
+    row: "4"
   })));
 }
 
@@ -28489,7 +28499,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65275" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54410" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

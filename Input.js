@@ -20,17 +20,23 @@ function Input(props) {
     if (props.fullWidth) {
         inputClass = `${inputClass} input--fullWidth`
     }
+    if (props.row) {
+        inputClass = `${inputClass} input--${props.row}`
+    }
 
 
     return (
         <label>
             Label <br/>
-            <input 
-                className={inputClass} 
-                type="text" 
-                disabled={props.disabled}
-                placeholder={props.value === "text" ? "Text" : "Placeholder"}
-            />
+            {props.multiline 
+            ? <textarea className={inputClass} placeholder="Placeholder"></textarea> 
+            : <input 
+                    className={inputClass} 
+                    type="text" 
+                    disabled={props.disabled}
+                    placeholder={props.value === "text" ? "Text" : "Placeholder"}
+                /> 
+            }
             <br/>
             {props.helperText && <small>{props.helperText}</small>}
 
