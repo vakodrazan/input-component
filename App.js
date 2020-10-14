@@ -10,33 +10,33 @@ function App() {
             </header>
             <section>
                 <div className="content">
-                    {`<Input />`} 
+                    <p>{`<Input />`} </p>
                     <br/>
                     <Input />
                 </div>
             </section>
             <section>
                 <div className="content">
-                    {`<Input error />`} 
+                    <p>{`<Input error />`} </p>
                     <br/>
                     <Input error />
                 </div>
             </section>
             <section>
                 <div className="content">
-                    {`<Input disabled />`} 
+                    <p>{`<Input disabled />`} </p>
                     <br/>
                     <Input disabled />
                 </div>
             </section>
             <section className="wrapper">
                 <div className="content"> 
-                    {`<Input helperText="You can use as much words as you want" />`} 
+                    <p>{`<Input helperText="You can use as much words as you want" />`} </p>
                     <br/>
                     <Input helperText="You can use as much words as you want" /> 
                 </div>
                 <div className="content"> 
-                    {`<Input helperText="You can use as much words as you want" error />`} 
+                    <p>{`<Input helperText="You can use as much words as you want" error />`} </p>
                     <br/>
                     <Input helperText="You can use as much words as you want" error />
                 </div>
@@ -44,12 +44,12 @@ function App() {
 
             <section className="wrapper">
                 <div className="content"> 
-                    {`<Input startIcon="call" />`} 
+                    <p>{`<Input startIcon="call" />`} </p>
                     <br/>
                     <Input startIcon="call" />
                 </div>
                 <div className="content"> 
-                    {`<Input endIcon="lock" />`} 
+                    <p>{`<Input endIcon="lock" />`} </p>
                     <br/>
                     <Input endIcon="lock" />
                 </div>
@@ -57,7 +57,7 @@ function App() {
 
             <section>
                 <div className="content">
-                    {`<Input value="text" />`} 
+                    <p>{`<Input value="text" />`} </p>
                     <br/>
                     <Input value="text" />
                 </div>
@@ -66,12 +66,12 @@ function App() {
             {/* Size */}
             <section className="wrapper">
                 <div className="content"> 
-                    {`<Input size="sm" />`} 
+                    <p>{`<Input size="sm" />`} </p>
                     <br/>
                     <Input size="sm" />
                 </div>
                 <div className="content"> 
-                    {`<Input size="md" />`} 
+                    <p>{`<Input size="md" />`} </p>
                     <br/>
                     <Input size="md" />
                 </div>
@@ -79,7 +79,7 @@ function App() {
 
             <section>
                 <div className="content">
-                    {`<Input fullWidth />`} 
+                    <p>{`<Input fullWidth />`} </p>
                     <br/>
                     <Input fullWidth />
                 </div>
@@ -87,7 +87,7 @@ function App() {
 
             <section>
                 <div className="content">
-                    {`<Input multiline row="4" />`} 
+                    <p>{`<Input multiline row="4" />`} </p>
                     <br/>
                     <Input multiline row="4" />
                 </div>

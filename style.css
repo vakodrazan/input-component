@@ -23,6 +23,17 @@ textarea {
 
 fieldset {
     border: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .wrapper {
@@ -31,7 +42,7 @@ fieldset {
 
 
 .content {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .container {
