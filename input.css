@@ -41,3 +41,44 @@ section {
     color: #828282;
     font-size: 10px;
 }
+
+/* **************** Icons *************** */
+
+/* Start Icon */
+
+.input--startIcon {
+    background-repeat: no-repeat;
+    background-size: 15% 100%;
+    text-align: justify;
+    padding-left: 25px;
+}
+
+.input--startIcon::placeholder {
+    padding-left: 10px;
+}
+
+/* End Icon */
+
+.input--endIcon {
+    background-repeat: no-repeat;
+    background-size: 15% 100%;
+    background-position: right;
+    padding-right: 25px;
+}
+
+
+.input--call {
+    background-image: url("./svgs/call.svg");
+}
+.input--cloud_download {
+    background-image: url("./svgs/cloud_download.svg");
+}
+.input--keyboard_voice {
+    background-image: url("./svgs/keyboard_voice.svg");
+}
+.input--lock {
+    background-image: url("./svgs/lock.svg");
+}
+.input--watch {
+    background-image: url("./svgs/watch.svg");
+}
