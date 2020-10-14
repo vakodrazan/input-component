@@ -12,10 +12,11 @@ section {
 }
 
 .input:hover {
-    border: 1px solid #f10505;
+    border: 1px solid #333333;
 }
 
-.input:focus-within {
+.input:focus {
+    outline: none;
     border: 1px solid #2962FF;
 }
 
