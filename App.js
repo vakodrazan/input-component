@@ -42,6 +42,12 @@ function App() {
                 <br/>
                 <Input endIcon="lock" />
             </section>
+
+            <section>
+                {`<Input value="text" />`} 
+                <br/>
+                <Input value="text" />
+            </section>
         </article>
     )
 }

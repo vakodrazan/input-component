@@ -11,6 +11,9 @@ function Input(props) {
     if (props.endIcon) {
         inputClass = `${inputClass} input--endIcon input--${props.endIcon}`
     }
+    if (props.value) {
+        inputClass = `${inputClass} input--${props.value}`
+    }
 
 
     return (
@@ -20,7 +23,7 @@ function Input(props) {
                 className={inputClass} 
                 type="text" 
                 disabled={props.disabled}
-                placeholder="Placeholder"
+                placeholder={props.value === "text" ? "Text" : "Placeholder"}
             />
             <br/>
             {props.helperText && <small>{props.helperText}</small>}

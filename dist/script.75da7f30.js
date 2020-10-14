@@ -28312,11 +28312,15 @@ function Input(props) {
     inputClass = "".concat(inputClass, " input--endIcon input--").concat(props.endIcon);
   }
 
+  if (props.value) {
+    inputClass = "".concat(inputClass, " input--").concat(props.value);
+  }
+
   return /*#__PURE__*/_react.default.createElement("label", null, "Label ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("input", {
     className: inputClass,
     type: "text",
     disabled: props.disabled,
-    placeholder: "Placeholder"
+    placeholder: props.value === "text" ? "Text" : "Placeholder"
   }), /*#__PURE__*/_react.default.createElement("br", null), props.helperText && /*#__PURE__*/_react.default.createElement("small", null, props.helperText));
 }
 
@@ -28424,6 +28428,8 @@ function App() {
     startIcon: "call"
   })), /*#__PURE__*/_react.default.createElement("section", null, "<Input endIcon=\"lock\" />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
     endIcon: "lock"
+  })), /*#__PURE__*/_react.default.createElement("section", null, "<Input value=\"text\" />", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    value: "text"
   })));
 }
 

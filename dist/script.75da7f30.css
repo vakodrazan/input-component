@@ -51,6 +51,7 @@ section {
     background-size: 15% 100%;
     text-align: justify;
     padding-left: 25px;
+    box-sizing: border-box;
 }
 
 .input--startIcon::placeholder {
@@ -64,6 +65,7 @@ section {
     background-size: 15% 100%;
     background-position: right;
     padding-right: 25px;
+    box-sizing: border-box;
 }
 
 
@@ -83,5 +85,11 @@ section {
     background-image: url("/watch.42c4014c.svg");
 }
 
+
+/* Text */
+
+.input--text::placeholder {
+    color: #333333
+}
 
 /*# sourceMappingURL=/script.75da7f30.css.map */
