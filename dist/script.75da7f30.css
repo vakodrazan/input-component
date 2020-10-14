@@ -54,8 +54,10 @@ section {
 
 .input--startIcon {
     background-repeat: no-repeat;
-    background-size: 15% 100%;
+    background-size: 18px;
     text-align: justify;
+    background-position-x: 7px;
+    background-position-y: 50%;
     padding-left: 25px;
     box-sizing: border-box;
 }
@@ -68,8 +70,9 @@ section {
 
 .input--endIcon {
     background-repeat: no-repeat;
-    background-size: 15% 100%;
-    background-position: right;
+    background-size: 18px;
+    background-position-x: 97%;
+    background-position-y: 50%;
     padding-right: 25px;
     box-sizing: border-box;
 }
