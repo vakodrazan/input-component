@@ -28,12 +28,15 @@ function Input(props) {
 
 
     return (
-        <label className={lableStyle}>
-            Label <br/>
+        <fieldset>
+            <label className={lableStyle}>
+                Label
+            </label>
+            <br/>
             {props.multiline 
-            ? <textarea className={inputClass} placeholder="Placeholder"></textarea> 
-            : <input 
-                    className={inputClass} 
+                ? <textarea className={inputClass} placeholder="Placeholder"></textarea> 
+                : <input 
+                        className={inputClass} 
                     type="text" 
                     disabled={props.disabled}
                     placeholder={props.value === "text" ? "Text" : "Placeholder"}
@@ -41,8 +44,8 @@ function Input(props) {
             }
             <br/>
             {props.helperText && <small>{props.helperText}</small>}
-
-        </label>
+        </fieldset>
+        
     )
 }
 
