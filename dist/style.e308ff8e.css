@@ -47,19 +47,31 @@ label {
 .wrapper {
     display: inline-block;
 }
-
-
 .content {
     padding-bottom: 1.5rem;
     background-color: white;
     padding: 1rem;
     border-radius: 8px;
+    margin-bottom: 8px;
 }
 
 .container {
     padding: 1rem;
     margin: auto;
     max-width: 1114px;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0;
+        margin: auto;
+        width: 640px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5px;
+    }
 }
 
 @media (min-width: 1114px) {
