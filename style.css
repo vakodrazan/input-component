@@ -2,12 +2,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin: 0;
-    background-color: rgb(251, 251, 251);
+    background-color: rgb(172, 221, 253);
+}
+
+body > header {
+    background-color: rgb(64, 64, 247);
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 h1 {
     text-align: center;
     font-size: 42px;
+    margin: 0;
 }
 
 h2 {
@@ -43,6 +51,9 @@ label {
 
 .content {
     padding-bottom: 1.5rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 .container {
@@ -60,5 +71,6 @@ label {
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 5px;
     }
 }
