@@ -34,7 +34,10 @@ function Input(props) {
             </label>
             <br/>
             {props.multiline 
-                ? <textarea className={inputClass} placeholder="Placeholder"></textarea> 
+                ? <textarea 
+                    className={inputClass} 
+                    placeholder="Placeholder"
+                ></textarea> 
                 : <input 
                         className={inputClass} 
                     type="text" 
